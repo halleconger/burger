@@ -39,12 +39,12 @@ var orm = {
             if (err) {
                 throw err;
             }
-            cb(data);
             console.log(data);
+            cb(data);
         });
     },
 
-    insertOne: function (table, newData) {
+    insertOne: function (table, newData, cb) {
         var queryString = "INSERT INTO ?? SET ?"
 
         console.log(queryString);
@@ -53,15 +53,16 @@ var orm = {
             if (err) {
                 throw err;
             }
-            cb(data);
             console.log(data)
+            cb(data);
         });
     },
 
     updateOne: function (table, objColVals, condition, cb) {
         var queryString = "UPDATE ?? SET ? WHERE ?"
 
-        console.log(queryString);
+        console.log(queryString, [table, objColVals, condition]);
+
 
         connection.query(queryString, [table, objColVals, condition], function (err, data) {
             if (err) {

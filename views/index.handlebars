@@ -14,11 +14,8 @@
                 {{#each burgers}} {{#unless this.devoured}}
                 <li>
                     {{this.burger_name}}
-
-                    <form action="/{{this.id}}?_method=PUT" method="POST">
-                        <input type="hidden" name="devoured" value="true">
-                        <button type="submit" class="btn btn-success"> DEVOUR THIS BURGER!</button>
-                    </form>
+            
+                        <button data-id="{{this.id}}" type="submit" class="btn btn-success devour"> DEVOUR THIS BURGER!</button>
                 </li>
                 {{/unless}} {{/each}}
             </ul>

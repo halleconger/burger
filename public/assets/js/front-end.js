@@ -1,16 +1,17 @@
 $(document).ready(function () {
     console.log("linked");
 
-    $("#submit").on("click", function () {
+    $(".devour").on("click", function () {
         var id = $(this).data("id");
+        console.log(id);
 
         var nowDevoured = {
             devoured: true
         }
 
         $.ajax("/" + id, {
-            type: PUT,
-            data: nowDevoured
+            type: "PUT",
+            // data: nowDevoured
         }).then(function () {
             location.reload();
         })
