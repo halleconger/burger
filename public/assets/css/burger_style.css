@@ -1,3 +1,74 @@
 .container {
-    text-align: center
+    text-align: center;
+    background: url(../img/halftone-yellow.png);
+
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.jumbotron {
+    border: 5px double black;
+    font-family: 'Love Ya Like A Sister', cursive;
+    width: 100%;
+    
+}
+
+#title {
+    font-size: 75px;
+}
+
+#burger_name {
+    width: 500px;
+    height: 200px;
+    border: 5px double black;
+    background: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#notDevoured {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+}
+
+#devoured {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+}
+
+.form-group {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+#add-burger {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#eat {
+    font-family: 'Love Ya Like A Sister', cursive;
+    background: white;
+    border: 5px double black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#alreadyEaten {
+    font-family: 'Love Ya Like A Sister', cursive;
+    background: white;
+    border: 5px double black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 25px;
 }
